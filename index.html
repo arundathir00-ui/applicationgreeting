@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greeting Application</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Include canvas-confetti for the confetti and party popper animations -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <div class="glass-container">
+        <h1>Welcome</h1>
+        <label for="nameInput" class="input-label">Enter Your Name</label>
+        <div class="input-group">
+            <input type="text" id="nameInput" placeholder="Type your name here..." autocomplete="off">
+            <button id="greetBtn" class="primary-btn">Greet</button>
+        </div>
+        <div id="greetingDisplay" class="greeting-display hidden"></div>
+    </div>
+    
+    <!-- Canvas for custom animations like glowing burst -->
+    <canvas id="animationCanvas"></canvas>
+    
+    <script src="script.js"></script>
+</body>
+</html>
