@@ -1,0 +1,37 @@
+# Modern Greeting Web Application
+
+This plan outlines the creation of a visually attractive, modern greeting web application that dynamically says hello to the user and triggers one of three randomized animations (Confetti, Party Popper, Glowing Burst) upon clicking the "Greet" button.
+
+## Proposed Changes
+
+### Greeting Application
+The project will be built using Vanilla HTML, CSS, and JS to keep it lightweight while ensuring a premium design aesthetic (e.g., glassmorphism, gradient backgrounds).
+
+#### [NEW] [index.html](file:///C:/Users/arund/.gemini/antigravity/scratch/greeting-app/index.html)
+- Clean, semantic HTML structure.
+- Input field with placeholder, "Greet" button, and greeting message container.
+- Includes a canvas element for the animations.
+
+#### [NEW] [style.css](file:///C:/Users/arund/.gemini/antigravity/scratch/greeting-app/style.css)
+- Visually attractive premium dark mode design.
+- Centered layout using CSS Flexbox.
+- Modern font, smooth transitions, and glowing effects for the burst animation.
+
+#### [NEW] [script.js](file:///C:/Users/arund/.gemini/antigravity/scratch/greeting-app/script.js)
+- Event listener for the "Greet" button.
+- Logic to display `Hello <Name>`.
+- Randomizer to select one of 3 animations (Confetti, Party Popper, Glowing Burst) using `canvas-confetti` and custom CSS classes.
+- Ensures animations clear before the next one runs.
+
+## Verification Plan
+
+### Automated Tests
+- This is a frontend UI prototype, so visual testing will be done in the browser. No unit tests are needed.
+
+### Manual Verification
+- Open `index.html` in the browser.
+- Verify the UI is centered, features a glassmorphism style, and looks modern.
+- Type a name and click "Greet".
+- Verify "Hello <Name>" appears dynamically.
+- Verify one of the three random animations plays.
+- Click multiple times to ensure animations clear properly and don't overlap visually.
